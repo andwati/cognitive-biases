@@ -31,9 +31,9 @@ export default async function Home() {
           <ThemeSwitcher />
         </div>
       </nav>
-      <div className="grid grid-cols-1  gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6">
+      <div className="grid grid-cols-1  gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {jsonData.map((bias, index) => (
-          <Card key={index} className="flex flex-col justify-between">
+          <Card key={index} className="flex flex-col justify-between m-2">
             <CardHeader className="flex-row gap-4 items-center">
               <div>
                 <CardTitle>{bias.name}</CardTitle>
