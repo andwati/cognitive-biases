@@ -8,14 +8,11 @@ runs:
       with:
         node-version: 20
 
-    - name: Cache dependencies ⚡
-      id: cache_dependencies
-      uses: actions/cache@v3
+    - name: pnpm    
+      uses: pnpm/action-setup@v2
       with:
-        path: node_modules
-        key: node-modules-${{ hashFiles('package-lock.json') }}
+        version: 8
 
     - name: Install dependencies 🔧
       shell: bash
-      if: steps.cache_dependencies.outputs.cache-hit != 'true'
-      run: npm ci
+      run: pnpm install
