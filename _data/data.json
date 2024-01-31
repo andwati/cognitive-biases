@@ -1,51 +1,82 @@
 [
   {
-    "bias": "Anchoring Bias",
-    "description": "The anchoring bias, or focalism, is the tendency to rely too heavily on one trait or piece of information when making decisions (usually the first piece of information acquired on that subject).",
-    "wikipedia_link": "https://en.wikipedia.org/wiki/Anchoring_bias",
-    "types": [
-      {
-        "name": "Common source bias",
-        "description": "The tendency to combine or compare research studies from the same source, or from sources that use the same methodologies or data.",
-        "wikipedia_link": ""
-      },
-      {
-        "name": "Conservatism bias",
-        "description": "The tendency to insufficiently revise one's belief when presented with new evidence.",
-        "wikipedia_link": ""
-      },
-      {
-        "name": "Functional fixedness",
-        "description": "A tendency limiting a person to using an object only in the way it is traditionally used.",
-        "wikipedia_link": ""
-      },
-      {
-        "name": "Law of the instrument",
-        "description": "An over-reliance on a familiar tool or methods, ignoring or under-valuing alternative approaches. 'If all you have is a hammer:  everything looks like a nail.'",
-        "wikipedia_link": ""
-      }
-    ]
+    "name": "Common source bias",
+    "description": "The tendency to combine or compare research studies from the same source, or from sources that use the same methodologies or data.",
+    "link": ""
   },
   {
-    "bias": "Apophenia",
-    "description": "The tendency to perceive meaningful connections between unrelated things.",
-    "wikipedia_link": "",
-    "types": [
-      {
-        "name": "Clustering illusion",
-        "description": "The tendency to overestimate the importance of small runs, streaks, or clusters in large samples of random data (that is, seeing phantom patterns).",
-        "wikipedia_link": ""
-      },
-      {
-        "name": "Illusory correlation",
-        "description": "A tendency to inaccurately perceive a relationship between two unrelated events.",
-        "wikipedia_link": ""
-      },
-      {
-        "name": "Pareidolia",
-        "description": "A tendency to perceive a vague and random stimulus (often an image or sound) as significant, e.g., seeing images of animals or faces in clouds, the man in the Moon, and hearing non-existent hidden messages on records played in reverse.",
-        "wikipedia_link": ""
-      }
-    ]
+    "name": "Conservatism bias",
+    "description": "The tendency to insufficiently revise one's belief when presented with new evidence.",
+    "link": ""
+  },
+  {
+    "name": "Functional fixedness",
+    "description": "A tendency limiting a person to using an object only in the way it is traditionally used.",
+    "link": ""
+  },
+  {
+    "name": "Law of the instrument",
+    "description": "An over-reliance on a familiar tool or methods, ignoring or under-valuing alternative approaches. 'If all you have is a hammer, everything looks like a nail.'",
+    "link": ""
+  },
+  {
+    "name": "Clustering illusion",
+    "description": "The tendency to overestimate the importance of small runs, streaks, or clusters in large samples of random data (that is, seeing phantom patterns).",
+    "link": ""
+  },
+  {
+    "name": "Illusory correlation",
+    "description": "A tendency to inaccurately perceive a relationship between two unrelated events.",
+    "link": ""
+  },
+  {
+    "name": "Pareidolia",
+    "description": "A tendency to perceive a vague and random stimulus (often an image or sound) as significant, e.g., seeing images of animals or faces in clouds, the man in the Moon, and hearing non-existent hidden messages on records played in reverse.",
+    "link": ""
+  },
+  {
+    "name": "Anthropocentric thinking",
+    "description": "The tendency to use human analogies as a basis for reasoning about other, less familiar, biological phenomena.",
+    "link": ""
+  },
+  {
+    "name": "Anthropomorphism",
+    "description": "Characterization of animals, objects, and abstract concepts as possessing human traits, emotions, or intentions. The opposite bias, of not attributing feelings or thoughts to another person, is dehumanised perception, a type of objectification.",
+    "link": ""
+  },
+  {
+    "name": "Attentional bias",
+    "description": "The tendency of perception to be affected by recurring thoughts.",
+    "link": ""
+  },
+  {
+    "name": "Frequency illusion or Baader–Meinhof phenomenon",
+    "description": "The frequency illusion is that once something has been noticed then every instance of that thing is noticed, leading to the belief it has a high frequency of occurrence (a form of selection bias). The Baader–Meinhof phenomenon is the illusion where something that has recently come to one's attention suddenly seems to appear with improbable frequency shortly afterwards. It was named after an incidence of frequency illusion in which the Baader–Meinhof Group was mentioned.",
+    "link": ""
+  },
+  {
+    "name": "Implicit association",
+    "description": "Where the speed with which people can match words depends on how closely they are associated.",
+    "link": ""
+  },
+  {
+    "name": "Salience bias",
+    "description": "The tendency to focus on items that are more prominent or emotionally striking and ignore those that are unremarkable, even though this difference is often irrelevant by objective standards. See also von Restorff effect.",
+    "link": ""
+  },
+  {
+    "name": "Selection bias",
+    "description": "Which happens when the members of a statistical sample are not chosen completely at random, which leads to the sample not being representative of the population.",
+    "link": ""
+  },
+  {
+    "name": "Survivorship bias",
+    "description": "Which is concentrating on the people or things that 'survived' some process and inadvertently overlooking those that did not because of their lack of visibility.",
+    "link": ""
+  },
+  {
+    "name": "Well travelled road effect",
+    "description": "The tendency to underestimate the duration taken to traverse oft-travelled routes and overestimate the duration taken to traverse less familiar routes.",
+    "link": ""
   }
 ]
