@@ -9,51 +9,68 @@ import {
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import ThemeSwitcher from "@/components/theme-switcher";
+import fs from "fs";
+import path from "path";
+import Link from "next/link";
 
-interface Recipe {
-  title: string;
-  image: string;
-  time: string;
+type BiasType = {
+  name: string;
   description: string;
-  vegan: boolean;
-  id: string;
-}
+  wikipedia_link: string;
+};
 
-async function getRecipes(): Promise<Recipe[]> {
-  const recipes = await fetch("http://localhost:4000/recipes");
-
-  // await new Promise((resolve) => setTimeout(resolve, 3000));
-  return recipes.json();
-}
+type Bias = {
+  bias: string;
+  description: string;
+  wikipedia_link: string;
+  types: BiasType[];
+};
 
 export default async function Home() {
-  const recipes = await getRecipes();
+  const dataBuffer = fs.readFileSync(path.resolve("_data/data.json"));
+  const jsonData: Bias[] = JSON.parse(dataBuffer.toString());
   return (
     <main>
+      <nav className="flex justify-between">
+        <h1>Cognitive biases</h1>
+        <div>
+          {" "}
+          <ThemeSwitcher />
+        </div>
+      </nav>
       <div className="grid grid-cols-3 gap-8">
-        {recipes.map((recipe) => (
-          <Card key={recipe.id} className="flex flex-col justify-between">
-            <CardHeader className="flex-row gap-4 items-center">
-              <Avatar>
-                <AvatarImage src={`/img/${recipe.image}`} alt={recipe.title} />
-                <AvatarFallback>{recipe.title.slice(0, 2)}</AvatarFallback>
-              </Avatar>
-              <div>
-                <CardTitle>{recipe.title}</CardTitle>
-                <CardDescription>{recipe.time} mins to cook</CardDescription>
-              </div>
-            </CardHeader>
+        {jsonData.map((bias, index) => (
+          <>
+            <div key={index}>
+              <h3>{bias.bias}</h3>
+              <p>{bias.description}</p>
+            </div>
+            {bias.types.map((type, i) => {
+              <Card key={i} className="flex flex-col justify-between">
+                <CardHeader className="flex-row gap-4 items-center">
+                  <div>
+                    <CardTitle>{type.name}</CardTitle>
+                    <CardDescription>
+                      Bias Group Link : {bias.wikipedia_link}
+                    </CardDescription>
+                  </div>
+                </CardHeader>
 
-            <CardContent>
-              <p>{recipe.description}</p>
-            </CardContent>
+                <CardContent>
+                  <p>{type.description}</p>
+                </CardContent>
 
-            <CardFooter className="flex justify-between">
-              <Button>View Recipe</Button>
-              {recipe.vegan && <Badge variant="secondary">Vegan</Badge>}
-            </CardFooter>
-          </Card>
+                <CardFooter className="flex justify-between">
+                  <Button>
+                    <Link href={type.wikipedia_link} target="_blank">
+                      View on Wikipedia
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>;
+            })}
+          </>
         ))}
       </div>
     </main>

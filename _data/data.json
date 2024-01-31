@@ -1,0 +1,51 @@
+[
+  {
+    "bias": "Anchoring Bias",
+    "description": "The anchoring bias, or focalism, is the tendency to rely too heavily on one trait or piece of information when making decisions (usually the first piece of information acquired on that subject).",
+    "wikipedia_link": "https://en.wikipedia.org/wiki/Anchoring_bias",
+    "types": [
+      {
+        "name": "Common source bias",
+        "description": "The tendency to combine or compare research studies from the same source, or from sources that use the same methodologies or data.",
+        "wikipedia_link": ""
+      },
+      {
+        "name": "Conservatism bias",
+        "description": "The tendency to insufficiently revise one's belief when presented with new evidence.",
+        "wikipedia_link": ""
+      },
+      {
+        "name": "Functional fixedness",
+        "description": "A tendency limiting a person to using an object only in the way it is traditionally used.",
+        "wikipedia_link": ""
+      },
+      {
+        "name": "Law of the instrument",
+        "description": "An over-reliance on a familiar tool or methods, ignoring or under-valuing alternative approaches. 'If all you have is a hammer:  everything looks like a nail.'",
+        "wikipedia_link": ""
+      }
+    ]
+  },
+  {
+    "bias": "Apophenia",
+    "description": "The tendency to perceive meaningful connections between unrelated things.",
+    "wikipedia_link": "",
+    "types": [
+      {
+        "name": "Clustering illusion",
+        "description": "The tendency to overestimate the importance of small runs, streaks, or clusters in large samples of random data (that is, seeing phantom patterns).",
+        "wikipedia_link": ""
+      },
+      {
+        "name": "Illusory correlation",
+        "description": "A tendency to inaccurately perceive a relationship between two unrelated events.",
+        "wikipedia_link": ""
+      },
+      {
+        "name": "Pareidolia",
+        "description": "A tendency to perceive a vague and random stimulus (often an image or sound) as significant, e.g., seeing images of animals or faces in clouds, the man in the Moon, and hearing non-existent hidden messages on records played in reverse.",
+        "wikipedia_link": ""
+      }
+    ]
+  }
+]
