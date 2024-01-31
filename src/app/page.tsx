@@ -14,7 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 interface Recipe {
   title: string;
   image: string;
-  time: Number;
+  time: string;
   description: string;
   vegan: boolean;
   id: string;
@@ -23,7 +23,7 @@ interface Recipe {
 async function getRecipes(): Promise<Recipe[]> {
   const recipes = await fetch("http://localhost:4000/recipes");
 
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
   return recipes.json();
 }
 
